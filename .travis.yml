@@ -1,0 +1,9 @@
+dist: bionic
+language: c
+script: test.sh
+matrix:
+  include:
+  - env: CI_KIND=check-depend
+  - env: CI_KIND=changes
+  - env: CI_KIND=manual
+  - env: CI_KIND=check-typo
