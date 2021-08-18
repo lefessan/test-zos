@@ -3,7 +3,7 @@ language: c
 script: ./test.sh
 matrix:
   include:
-  - env: CI_KIND=check-depend
-  - env: CI_KIND=changes
-  - env: CI_KIND=manual
-  - env: CI_KIND=check-typo
+   - os: linux
+     arch: ppc64le
+   - os: linux
+     arch: s390x
