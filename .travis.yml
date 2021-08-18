@@ -1,6 +1,6 @@
 dist: bionic
 language: c
-script: test.sh
+script: ./test.sh
 matrix:
   include:
   - env: CI_KIND=check-depend
